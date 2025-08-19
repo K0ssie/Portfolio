@@ -1,0 +1,27 @@
+.footer {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-contact-access {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 2rem;
+  margin: 0 0.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #facc15;
+}

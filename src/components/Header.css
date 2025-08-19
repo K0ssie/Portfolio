@@ -1,0 +1,80 @@
+/* --- HEADER --- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: white;
+  color: black;
+  padding: 1rem 2rem;
+  position: static;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* --- TITLE --- */
+.header-title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-family: 'Cursive', sans-serif;
+  color: #cc1b1b;
+  margin: 0;
+}
+
+/* --- NAV LINKS (default: horizontal) --- */
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  /* No width here by default */
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #cc1b1b;
+}
+
+/* --- BODY --- */
+.body {
+  padding-top: 0;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+/* --- MOBILE: stack nav links vertically --- */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links li a {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+}

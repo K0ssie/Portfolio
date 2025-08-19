@@ -1,0 +1,43 @@
+/* src/App.css */
+body {
+  background-color: white; /* Whole page background is white */
+  color: black;            /* Text is black for contrast */
+  padding-top: 0;
+  text-align: center;
+  font-family: Arial, sans-serif; /* Optional, keeps it clean */
+}
+
+
+h1, h2, h3 {
+    color: #FF0000;  /* Cherry red for headings */
+    text-shadow: 0 0 5px #FF0000, 0 0 10px #FF0000;  /* Glowing red effect */
+}
+
+button {
+    background-color: #FF0000;  /* Cherry red background for buttons */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 5px #FF0000;  /* Glowing effect around the button */
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #cc0000;  /* Darker red on hover */
+    box-shadow: 0 0 10px #FF0000;  /* Stronger glowing effect on hover */
+}
+
+/* Red and black themed link styling */
+a {
+    color: #FF0000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #cc0000;  /* Darker red on hover */
+    text-shadow: 0 0 10px #FF0000;  /* Glowing effect on hover */
+}
